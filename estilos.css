@@ -1,8 +1,41 @@
-thead{
+
+thead {
     font-weight: bold;
 }
 
-body{
-    background-color: white;
+body {
+    background-color: rgb(255, 255, 255);
     font-size: 18pt;
 }
+
+
+img {
+    background-image: url('');
+}
+
+
+/* Estilos para o menu */
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 20px; 
+    background-color: transparent; 
+}
+
+/* Estilos do menu para telas menores */
+@media only screen and (max-width: 800px) {
+    .menu li {
+        display: block;
+        padding: 10px; 
+        background-color: #f4f4f4;
+    }
+}
+/*Imagem de fundo*/
+body {
+    background-image: url('Imagens/Tigre.jpg');
+}
+
