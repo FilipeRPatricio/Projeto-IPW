@@ -28,11 +28,9 @@ body {
         background-color: #f4f4f4;
     }
 }
-<<<<<<< HEAD
-=======
 
-/**Definições do menu principal**/
-ul#Home
+/* Definições do menu principal */
+ul#Table
 {
     margin-left: 0;
     padding-left: 0;
@@ -43,7 +41,7 @@ ul#Home
 ul#Home  li{
     display: inline;
 }
-ul#Home a{
+ul#Table a{
     display: inline-block;
     padding: 3px 40px 3px 22px;
     text-decoration: none;
@@ -51,9 +49,12 @@ ul#Home a{
     background: rgb(1, 145, 63) url("imagens/Circulo\ laranja.png") no-repeat 3px 50%;
     border-right: 1px solid #FFF;
 }
+
+
+#menu {top: 0; position: fixed;}
+
 ul#Home a:hover
 {
     color: #000;
     background-color: #69c;
 }
->>>>>>> a2004dcf6f4884368d48b18a2492fce908169f4e
