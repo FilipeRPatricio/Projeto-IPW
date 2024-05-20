@@ -58,3 +58,8 @@ ul#Home a:hover
     color: #000;
     background-color: #69c;
 }
+
+td {
+    text-align: center;
+    vertical-align: middle;
+  }

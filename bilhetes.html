@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html> 
+        <head>
+            <meta charset="utf-8" />
+            <title>Style Body</title>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+        </head>
+        <body>
+            <div>
+                <div id="menu">
+                <ul id="Table">
+                    <a href="inicial.html"> Logo Aqui</a>
+                    <a href="visitar.html"> Visitar</a>
+                    <a href="animais.html"> Animais</a>
+                    <a href="bilhetes.html"> Bilhetes</a>
+                    <a href="apoiar.html"> Apoiar</a>
+                </ul>
+                </div>
+            </div>
+            <div style="position: relative; top:75px">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th> Tipo </th>
+                            <th> Preço </th>
+                            <th> Quantidade </th>
+                        </tr>
+                    </thead>
+                   <tbody>
+                    <tr>
+                        <td>Criança (3 - 12 Anos)</td>
+                        <td>12.99€</td>
+                        <td>- 0 +</td>
+                    </tr>
+                    <tr>
+                        <td>Jovem (13 - 25 Anos)</td>
+                        <td>19.99€</td>
+                        <td>- 0 +</td>
+                    </tr>
+                    <tr>
+                        <td>Adulto (26 - 64 Anos)</td>
+                        <td>69.99€</td>
+                        <td>- 0 +</td>
+                    </tr>
+                    <tr>
+                        <td>Sénior (+65 Anos)</td>
+                        <td>99.99€</td>
+                        <td>- 0 +</td>
+                    </tr>
+                <tfoot>
+
+                </tfoot>
+            </table>
+                <div>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend> Dados de Cliente </legend>
+                            <label for="nome"> Nome: (*) </label>
+                            <input id="nome" name="nome" type="text" /> 
+                            <br />
+
+                            <label for="email"> E-mail: </label>
+                            <input id="email" name="email" type="text" />
+                            <br />
+
+                            <label for="pagamento"> Método de Pagamento: (*) </label>
+                            <select id="pagamento" name="pagamento">
+                                <option value="empty"> --- </option>
+                                <option value="visa">Visa</option>
+                                <option value="mbway">MBWay</option>
+                                <option value="multibanco">Multibanco</option>
+                                </select>
+                            <br />
+
+                            <input id="submeter" name="submeter" type="submit" value="Enviar" />
+                            <input id="limpar" name="limpar"    type="reset" value="Limpar" />
+                        </fieldset>
+                    </form>
+                </div>
+
+                   </tbody>
