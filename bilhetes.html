@@ -1,11 +1,14 @@
 <!DOCTYPE html>
     <html> 
         <head>
-            <meta charset="utf-8" />
-            <title>Style Body</title>
-        <link href="estilos.css" rel="stylesheet" type="text/css">
+            <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+                    <link href="estilos.css" rel="stylesheet" type="text/css">
         </head>
         <body>
+            
             <div>
                 <div id="menu">
                 <ul id="Table">
@@ -17,39 +20,35 @@
                 </ul>
                 </div>
             </div>
-            <div style="position: relative; top:75px">
                 <table border="1">
-                    <thead>
-                        <tr>
-                            <th> Tipo </th>
-                            <th> Preço </th>
-                            <th> Quantidade </th>
-                        </tr>
-                    </thead>
-                   <tbody>
-                    <tr>
-                        <td>Criança (3 - 12 Anos)</td>
-                        <td>12.99€</td>
-                        <td>- 0 +</td>
-                    </tr>
-                    <tr>
-                        <td>Jovem (13 - 25 Anos)</td>
-                        <td>19.99€</td>
-                        <td>- 0 +</td>
-                    </tr>
-                    <tr>
-                        <td>Adulto (26 - 64 Anos)</td>
-                        <td>69.99€</td>
-                        <td>- 0 +</td>
-                    </tr>
-                    <tr>
-                        <td>Sénior (+65 Anos)</td>
-                        <td>99.99€</td>
-                        <td>- 0 +</td>
-                    </tr>
-                <tfoot>
-
-                </tfoot>
+                    <div class="container" style="position: relative; top:75px">
+                        <table>
+                             <thead>
+                                 <tr>
+                                     <th>Tipo de Bilhete</th>
+                                     <th>Preço</th>
+                                     <th>Quantidade</th>
+                                 </tr>
+                             </thead>
+                             <tbody>
+                                 <tr>
+                                     <td>Criança (3-12 Anos) <br> <span style = "font-size: 17px"> 5% de Desconto </span> </br> </td>
+                                     <td>14,99 €</td>
+                                     <td>0</td>
+                                 </tr>
+                                 <tr>
+                                     <td>Jovem (12-25 Anos) <br> <span style = "font-size: 17px"> 5% de Desconto </span> </br> </td>
+                                     <td>19,99 €</td>
+                                     <td>0</td>
+                                 </tr>
+                                 <tr>
+                                     <td>Adulto (26-64 Anos) <br> <span style = "font-size: 17px"> 5% de Desconto </span> </br> </td>
+                                     <td>24,99€</td>
+                                     <td>0</td>
+                                 </tr>
+                             </tbody>
+                         </table>
+                     </div>
             </table>
                 <div>
                     <form action="#" method="post">
@@ -77,5 +76,4 @@
                         </fieldset>
                     </form>
                 </div>
-
-                   </tbody>
+    </html>
