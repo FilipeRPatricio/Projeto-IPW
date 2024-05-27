@@ -6,6 +6,7 @@
                     <title>Document</title>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
                     <link href="estilos.css" rel="stylesheet" type="text/css">
+                    <script type="application/javascript" src = "script.js"></script>
         </head>
         <body>
             
@@ -21,7 +22,7 @@
                 </div>
             </div>
                 <table border="1">
-                    <div class="container" style="position: relative; top:75px">
+                    <div class="container" style="position: relative; margin-top:75px">
                         <table>
                              <thead>
                                  <tr>
@@ -34,8 +35,8 @@
                                  <tr>
                                      <td>Criança (3-12 Anos) <br> <span style = "font-size: 17px"> 5% de Desconto </span> </br> </td>
                                      <td>14,99 €</td>
-                                     <td>0</td>
-                                 </tr>
+                                     <td><input type="button" value="-" onclick="decrement()"> <span id="quantidade"> 0 </span> <input type="button" value="+" onclick="increment();"> </td>
+                                </tr>
                                  <tr>
                                      <td>Jovem (12-25 Anos) <br> <span style = "font-size: 17px"> 5% de Desconto </span> </br> </td>
                                      <td>19,99 €</td>
