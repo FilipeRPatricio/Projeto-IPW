@@ -1,13 +1,16 @@
 function increment(){
-    let quantidade = document.getElementById("quantidadeCriança").innerText;
+    let quantidade = document.getElementById("quantidade").innerText;
     quantidade = parseInt(quantidade);
     quantidade++;
-    document.getElementById("quantidadeCriança").innerText = quantidade
+    document.getElementById("quantidade").innerText = quantidade
 }
 
-function decrementa(){
-    let quantidade = document.getElementById("quantidadeCriança").innerText;
+
+function decrement(){
+    let quantidade = document.getElementById("quantidade").innerText;
     quantidade = parseInt(quantidade);
     quantidade--;
-    document.getElementById("quantidadeCriança").innerText = quantidade
+    if(quantidade >= 0){
+    document.getElementById("quantidade").innerText = quantidade
+    }
 }
