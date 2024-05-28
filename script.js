@@ -56,3 +56,23 @@ function decrementA(){
     document.getElementById("quantidadeA").innerText = quantidade
     }
 }
+
+
+// Sénior
+function incrementS(){
+    let quantidade = document.getElementById("quantidadeS").innerText;
+    quantidade = parseInt(quantidade);
+    quantidade++;
+    if(quantidade <= 99){
+    document.getElementById("quantidadeS").innerText = quantidade
+    }
+}
+
+function decrementS(){
+    let quantidade = document.getElementById("quantidadeS").innerText;
+    quantidade = parseInt(quantidade);
+    quantidade--;
+    if(quantidade >= 0){
+    document.getElementById("quantidadeS").innerText = quantidade
+    }
+}

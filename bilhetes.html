@@ -47,13 +47,18 @@
                                      <td>24,99€</td>
                                      <td><input type="button" value="-" onclick="decrementA()"> <span id="quantidadeA"> 0 </span> <input type="button" value="+" onclick="incrementA();"> </td>
                                  </tr>
+                                 <tr>
+                                    <td>Sénior (+65 Anos) <br> <span style = "font-size: 17px"> 5% de Desconto </span> </br> </td>
+                                    <td>16,99€</td>
+                                    <td><input type="button" value="-" onclick="decrementS()"> <span id="quantidadeS"> 0 </span> <input type="button" value="+" onclick="incrementS();"> </td>
+                                </tr>
                              </tbody>
                          </table>
                      </div>
             </table>
                 <div>
                     <form action="#" method="post">
-                        <fieldset>
+                        <fieldset style="margin-top: 75px">
                             <legend> Dados de Cliente </legend>
                             <label for="nome"> Nome: (*) </label>
                             <input id="nome" name="nome" type="text" /> 
@@ -69,7 +74,7 @@
                                 <option value="visa">Visa</option>
                                 <option value="mbway">MBWay</option>
                                 <option value="multibanco">Multibanco</option>
-                                </select>
+                            </select>
                             <br />
 
                             <input id="submeter" name="submeter" type="submit" value="Enviar" />
