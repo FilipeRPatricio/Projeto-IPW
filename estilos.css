@@ -1,47 +1,47 @@
+/* estilos.css */
 
-thead {
-    font-weight: bold;
+/* Estilo para o cabeçalho e navegação */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    position: relative;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
 }
 
-body {
-    background-color: rgb(255, 255, 255);
-    font-size: 18pt;
+.logo {
+    margin-right: 20px; /* Espaço entre o logotipo e os itens de navegação */
 }
 
-/* Estilos para o menu */
-.menu {
-    list-style-type: none;
+.logo img {
+    width: 200px; /* ajuste conforme necessário */
+    height: auto;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    position: relative; /* ajuste necessário para sobreposição */
+}
+
+ul#Table {
+    list-style: none;
+    margin: 0;
     padding: 0;
-}
-
-.menu li {
-    display: inline-block;
-    padding: 20px; 
-    background-color: transparent; 
-}
-
-/* Estilos do menu para telas menores */
-@media only screen and (max-width: 800px) {
-    .menu li {
-        display: block;
-        padding: 10px; 
-        background-color: #f4f4f4;
-    }
-}
-
-/* Definições do menu principal */
-ul#Table
-{
-    margin-left: 0;
-    padding-left: 0;
-    background-color: rgb(0, 128, 15);
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    background-color: transparent; /* Remove o fundo branco */
     width: 100%;
 }
-ul#Home  li{
-    display: inline;
+
+ul#Table li {
+    display: inline-block;
+    padding: 20px;
+    background-color: transparent; /* Remove o fundo branco */
 }
-ul#Table a{
+
+ul#Table a {
     display: inline-block;
     padding: 3px 40px 3px 22px;
     text-decoration: none;
@@ -50,16 +50,39 @@ ul#Table a{
     border-right: 1px solid #FFF;
 }
 
-
-#menu {top: 0; position: fixed;}
-
-ul#Home a:hover
-{
+ul#Table a:hover {
     color: #000;
     background-color: #69c;
+}
+
+/* Estilos do menu para telas menores */
+@media only screen and (max-width: 800px) {
+    ul#Table {
+        flex-direction: column;
+    }
+    ul#Table li {
+        display: block;
+        padding: 10px;
+        background-color: #f4f4f4;
+    }
+}
+
+/* Background */
+body {
+    background-image: url("Imagens/background2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    width: auto;
+    font-size: 18pt;
+}
+
+/* Tabela */
+thead {
+    font-weight: bold;
 }
 
 td {
     text-align: center;
     vertical-align: middle;
-  }
+}
