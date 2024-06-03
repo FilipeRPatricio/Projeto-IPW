@@ -1,87 +1,101 @@
 <!DOCTYPE html>
-    <html> 
-        <head>
-            <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Document</title>
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-                    <link href="estilos.css" rel="stylesheet" type="text/css">
-                    <script type="application/javascript" src = "script.js"></script>
-        </head>
-        <header>
-            <a href="inicial.html" class="logo">
-                <img src="Imagens/logo.png" alt="logo">
-            </a>
-            <nav id="menu">
-                <ul id="Table" class="menu">
-                    <li><a href="inicial.html">Logo Aqui</a></li>
-                    <li><a href="visitar.html">Visitar</a></li>
-                    <li><a href="animais.html">Animais</a></li>
-                    <li><a href="bilhetes.html">Bilhetes</a></li>
-                    <li><a href="apoiar.html">Apoiar</a></li>
-                </ul>
-            </nav>
-        </header>
-        <body>
-                <table border="1">
-                    <div class="container" style="position: relative; margin-top:75px">
-                        <table>
-                             <thead>
-                                 <tr>
-                                     <th>Tipo de Bilhete</th>
-                                     <th>Preço</th>
-                                     <th>Quantidade</th>
-                                 </tr>
-                             </thead>
-                             <tbody>
-                                 <tr>
-                                     <td>Criança (3-12 Anos) <br> <span style = "font-size: 17px"> 5% de Desconto </span> </br> </td>
-                                     <td>14,99 €</td>
-                                     <td><input type="button" value="-" onclick="decrementC()"> <span id="quantidadeC"> 0 </span> <input type="button" value="+" onclick="incrementC();"> </td>
-                                </tr>
-                                 <tr>
-                                     <td>Jovem (12-25 Anos) <br> <span style = "font-size: 17px"> 5% de Desconto </span> </br> </td>
-                                     <td>19,99 €</td>
-                                     <td><input type="button" value="-" onclick="decrementJ()"> <span id="quantidadeJ"> 0 </span> <input type="button" value="+" onclick="incrementJ();"> </td>
-                                 </tr>
-                                 <tr>
-                                     <td>Adulto (26-64 Anos) <br> <span style = "font-size: 17px"> 5% de Desconto </span> </br> </td>
-                                     <td>24,99€</td>
-                                     <td><input type="button" value="-" onclick="decrementA()"> <span id="quantidadeA"> 0 </span> <input type="button" value="+" onclick="incrementA();"> </td>
-                                 </tr>
-                                 <tr>
-                                    <td>Sénior (+65 Anos) <br> <span style = "font-size: 17px"> 5% de Desconto </span> </br> </td>
-                                    <td>16,99€</td>
-                                    <td><input type="button" value="-" onclick="decrementS()"> <span id="quantidadeS"> 0 </span> <input type="button" value="+" onclick="incrementS();"> </td>
-                                </tr>
-                             </tbody>
-                         </table>
-                     </div>
-            </table>
-                <div>
-                    <form action="#" method="post">
-                        <fieldset style="margin-top: 75px">
-                            <legend> Dados de Cliente </legend>
-                            <label for="nome"> Nome: (*) </label>
-                            <input id="nome" name="nome" type="text" /> 
-                            <br />
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <script type="application/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="inicial.html" class="logo">
+            <img src="Imagens/logo.png" alt="logo">
+        </a>
+        <nav id="menu" style="background-color:#F8F8F8;">
+            <ul id="Table" class="menu">
+                <li><a href="visitar.html">Visitar</a></li>
+                <li><a href="animais.html">Animais</a></li>
+                <li><a href="bilhetes.html">Bilhetes</a></li>
+                <li><a href="apoiar.html">Apoiar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container" style="position: relative; margin-top: 75px;">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Tipo de Bilhete</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Criança (3-12 Anos) <br> <span style="font-size: 17px;">5% de Desconto</span></td>
+                    <td>14,99 €</td>
+                    <td>
+                        <input type="button" value="-" onclick="decrementC()"> 
+                        <span id="quantidadeC">0</span> 
+                        <input type="button" value="+" onclick="incrementC();">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jovem (12-25 Anos) <br> <span style="font-size: 17px;">5% de Desconto</span></td>
+                    <td>19,99 €</td>
+                    <td>
+                        <input type="button" value="-" onclick="decrementJ()"> 
+                        <span id="quantidadeJ">0</span> 
+                        <input type="button" value="+" onclick="incrementJ();">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Adulto (26-64 Anos) <br> <span style="font-size: 17px;">5% de Desconto</span></td>
+                    <td>24,99 €</td>
+                    <td>
+                        <input type="button" value="-" onclick="decrementA()"> 
+                        <span id="quantidadeA">0</span> 
+                        <input type="button" value="+" onclick="incrementA();">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sénior (+65 Anos) <br> <span style="font-size: 17px;">5% de Desconto</span></td>
+                    <td>16,99 €</td>
+                    <td>
+                        <input type="button" value="-" onclick="decrementS()"> 
+                        <span id="quantidadeS">0</span> 
+                        <input type="button" value="+" onclick="incrementS();">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <form action="#" method="post">
+            <fieldset style="margin-top: 75px;">
+                <legend>Dados de Cliente</legend>
+                <label for="nome">Nome: (*)</label>
+                <input id="nome" name="nome" type="text" required />
+                <br />
 
-                            <label for="email"> E-mail: </label>
-                            <input id="email" name="email" type="text" />
-                            <br />
+                <label for="email">E-mail:</label>
+                <input id="email" name="email" type="email" />
+                <br />
 
-                            <label for="pagamento"> Método de Pagamento: (*) </label>
-                            <select id="pagamento" name="pagamento">
-                                <option value="empty"> --- </option>
-                                <option value="visa">Visa</option>
-                                <option value="mbway">MBWay</option>
-                                <option value="multibanco">Multibanco</option>
-                            </select>
-                            <br />
+                <label for="pagamento">Método de Pagamento: (*)</label>
+                <select id="pagamento" name="pagamento" required>
+                    <option value="" disabled selected>---</option>
+                    <option value="visa">Visa</option>
+                    <option value="mbway">MBWay</option>
+                    <option value="multibanco">Multibanco</option>
+                </select>
+                <br />
 
-                            <input id="submeter" name="submeter" type="submit" value="Enviar" />
-                            <input id="limpar" name="limpar"    type="reset" value="Limpar" />
-                        </fieldset>
-                    </form>
-                </div>
-    </html>
+                <input id="submeter" name="submeter" type="submit" value="Enviar" />
+                <input id="limpar" name="limpar" type="reset" value="Limpar" />
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

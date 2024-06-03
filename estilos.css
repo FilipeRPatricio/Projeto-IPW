@@ -7,7 +7,7 @@ header {
     padding: 10px;
     background-color: #f8f8f8;
     position: relative;
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    z-index: 1000; 
 }
 
 .logo {
@@ -15,14 +15,14 @@ header {
 }
 
 .logo img {
-    width: 200px; /* ajuste conforme necessário */
+    width: 200px; 
     height: auto;
 }
 
 #menu {
     display: flex;
     align-items: center;
-    position: relative; /* ajuste necessário para sobreposição */
+    position: relative; 
 }
 
 ul#Table {
@@ -31,14 +31,14 @@ ul#Table {
     padding: 0;
     display: flex;
     align-items: center;
-    background-color: transparent; /* Remove o fundo branco */
+    background-color: transparent; 
     width: 100%;
 }
 
 ul#Table li {
     display: inline-block;
     padding: 20px;
-    background-color: transparent; /* Remove o fundo branco */
+    background-color: transparent; 
 }
 
 ul#Table a {
@@ -69,11 +69,6 @@ ul#Table a:hover {
 
 /* Background */
 body {
-    background-image: url("Imagens/background2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    float: left;
-    width: auto;
     font-size: 18pt;
 }
 
@@ -85,4 +80,11 @@ thead {
 td {
     text-align: center;
     vertical-align: middle;
+}
+
+.aligator1 {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+    object-position: left center;
 }
