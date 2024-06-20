@@ -5,7 +5,7 @@ header {
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: #f8f8f8;
+    background-color: #F8EEDC;
     position: relative;
     z-index: 1000; 
 }
@@ -35,24 +35,35 @@ ul#Table {
     width: 100%;
 }
 
+/* Menu */
 ul#Table li {
     display: inline-block;
-    padding: 20px;
-    background-color: transparent; 
+    padding-top: 10px;
+    margin-right: 15px;
+
+    text-align: center;
+    
+    height: 70px;
+    width: 150px;
+    background-color: #593335;
+    border-radius: 50%;
 }
 
 ul#Table a {
     display: inline-block;
-    padding: 3px 40px 3px 22px;
+    padding: 12px 10px 10px 10px;
+    
     text-decoration: none;
-    color: #ffffff;
-    background: rgb(1, 145, 63) url("imagens/Circulo\ laranja.png") no-repeat 3px 50%;
-    border-right: 1px solid #FFF;
+
+    font-family: "gitan-latin", sans-serif;
+    font-size: 23px;
+    font-weight: 900px;
+
+    color: #FFEBC0;
 }
 
 ul#Table a:hover {
-    color: #000;
-    background-color: #69c;
+    color: #52B370;
 }
 
 /* Estilos do menu para telas menores */
@@ -70,6 +81,7 @@ ul#Table a:hover {
 /* Background */
 body {
     font-size: 18pt;
+    background-color: #EAE1D2;
 }
 
 /* Tabela */
