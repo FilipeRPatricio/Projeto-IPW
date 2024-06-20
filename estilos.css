@@ -1,5 +1,3 @@
-/* estilos.css */
-
 /* Estilo para o cabeçalho e navegação */
 header {
     display: flex;
@@ -153,4 +151,87 @@ img {
 
 .active {
     background-color: #717171;
+}
+
+/* Adições específicas para a página Atividades */
+.atividades-container {
+    display: flex;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.atividades-container .image-container {
+    flex: 1;
+    max-width: 50%; /* Adicionado para limitar a largura da imagem */
+}
+
+.atividades-container .atividades-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.atividades-container .content {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%; /* Adicionado para limitar a largura do conteúdo */
+}
+
+.atividades-container h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.atividades-container p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.atividades-container .buttons {
+    margin-top: 20px;
+}
+
+.atividades-container button {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.atividades-container button:last-child {
+    background-color: #4caf50;
+}
+
+.atividades-container button:hover {
+    opacity: 0.8;
+}
+
+/* Adicionando responsividade */
+@media only screen and (max-width: 768px) {
+    .atividades-container {
+        flex-direction: column;
+    }
+
+    .atividades-container .image-container, 
+    .atividades-container .content {
+        max-width: 100%;
+    }
+}
+
+/* Estilos para o conteúdo adicional */
+.learn-more-content {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }

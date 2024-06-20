@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link href="estilos.css" rel="stylesheet" type="text/css">
-        <script type="application/javascript" src = "script.js"></script>
-    </head>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <script type="application/javascript" src="script.js"></script>
+</head>
+<body>
     <header>
         <a href="inicial.html" class="logo">
             <img src="Imagens/logo.png" alt="logo">
@@ -20,4 +21,39 @@
             </ul>
         </nav>
     </header>
+    <div class="atividades-container">
+        <div class="image-container">
+            <img src="Imagens/dt_junglehopper.jpg" alt="Safari" class="atividades-image">
+        </div>
+        <div class="content">
+            <h1>Safari</h1>
+            <p><strong>Horário:</strong> 09:00/11:00 | <strong>Preço:</strong> 50€</p>
+            <p>Junte-se a nós para uma aventura inesquecível no nosso Safari e experimente a emoção de ver os animais de perto no seu habitat natural. Não perca esta oportunidade de criar memórias inesquecíveis com a família e amigos!</p>
+            <div class="buttons">
+                <button onclick="bookNow()">Agenda já</button>
+                <button onclick="toggleLearnMore('safari-more')">Detalhes</button>
+            </div>
+            <div id="safari-more" class="learn-more-content">
+                <p>Durante o Safari, terá a oportunidade de ver animais no seu habitat natural e aprender sobre a conservação e proteção dessas espécies magníficas.</p>
+            </div>
+        </div>
+    </div>
+    <div class="atividades-container">
+        <div class="image-container">
+            <img src="Imagens/145.jpg" alt="Visitar koalas" class="atividades-image">
+        </div>
+        <div class="content">
+            <h1>Koalas carinhosos</h1>
+            <p><strong>Horário:</strong> 12:00/13:00 | <strong>Preço:</strong> 70€</p>
+            <p>Venha viver uma experiência única ao segurar um adorável koala e conhecê-los de perto no nosso zoo. Não perca a chance de criar momentos inesquecíveis com esses encantadores animais!</p>
+            <div class="buttons">
+                <button onclick="bookNow()">Agenda já</button>
+                <button onclick="toggleLearnMore('koala-more')">Detalhes</button>
+            </div>
+            <div id="koala-more" class="learn-more-content">
+                <p>Na atividade Koalas carinhosos, terá a oportunidade de segurar e conhecer de perto estes adoráveis marsupiais, aprendendo sobre o seu comportamento e habitat.</p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
