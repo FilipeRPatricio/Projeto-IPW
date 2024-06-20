@@ -1,80 +1,109 @@
 
-//Criança
+
+let quantidadeC = 0;
+let quantidadeJ = 0;
+let quantidadeA = 0;
+let quantidadeS = 0;
+
+const precoC = 14.99;
+const precoJ = 19.99;
+const precoA = 24.99;
+const precoS = 16.99;
+
+function calcularTotal() {
+    const total = (quantidadeC * precoC) + (quantidadeJ * precoJ) + (quantidadeA * precoA) + (quantidadeS * precoS);
+    document.getElementById('total').innerHTML = `${total.toFixed(2)} €`;
+}
+
+
+
+
+//Botões de + e -
+
+//Bilhete de criança
 function incrementC(){
-    let quantidade = document.getElementById("quantidadeC").innerText;
-    quantidade = parseInt(quantidade);
+    let quantidade = parseInt(document.getElementById("quantidadeC").innerText);
     quantidade++;
     if(quantidade <= 99){
-    document.getElementById("quantidadeC").innerText = quantidade;
+        document.getElementById("quantidadeC").innerText = quantidade;
+        quantidadeC = quantidade
     }
+    calcularTotal();
 }
 
 function decrementC(){
     let quantidade = document.getElementById("quantidadeC").innerText;
-    quantidade = parseInt(quantidade);
     quantidade--;
     if(quantidade >= 0){
-    document.getElementById("quantidadeC").innerText = quantidade;
+        document.getElementById("quantidadeC").innerText = quantidade;
+        quantidadeC = quantidade
     }
+    calcularTotal();
 }
 
-//Jovem
+//Bilhete de Jovem
 function incrementJ(){
     let quantidade = document.getElementById("quantidadeJ").innerText;
-    quantidade = parseInt(quantidade);
     quantidade++;
     if(quantidade <= 99){
-    document.getElementById("quantidadeJ").innerText = quantidade;
+        document.getElementById("quantidadeJ").innerText = quantidade;
+        quantidadeJ = quantidade
     }
+    calcularTotal();
 }
 
 function decrementJ(){
     let quantidade = document.getElementById("quantidadeJ").innerText;
-    quantidade = parseInt(quantidade);
     quantidade--;
     if(quantidade >= 0){
-    document.getElementById("quantidadeJ").innerText = quantidade;
+        document.getElementById("quantidadeJ").innerText = quantidade;
+        quantidadeJ = quantidade
     }
+    calcularTotal();
 }
 
 
-//Adulto
+//Bilhete de Adulto
 function incrementA(){
     let quantidade = document.getElementById("quantidadeA").innerText;
-    quantidade = parseInt(quantidade);
     quantidade++;
     if(quantidade <= 99){
-    document.getElementById("quantidadeA").innerText = quantidade
+        document.getElementById("quantidadeA").innerText = quantidade;
+        quantidadeA = quantidade
     }
+    calcularTotal();
 }
 
 function decrementA(){
     let quantidade = document.getElementById("quantidadeA").innerText;
-    quantidade = parseInt(quantidade);
     quantidade--;
     if(quantidade >= 0){
-    document.getElementById("quantidadeA").innerText = quantidade
+        document.getElementById("quantidadeA").innerText = quantidade;
+        quantidadeA = quantidade
     }
+    calcularTotal();
 }
 
 
-// Sénior
+// Bilhete de Sénior
 function incrementS(){
     let quantidade = document.getElementById("quantidadeS").innerText;
-    quantidade = parseInt(quantidade);
     quantidade++;
     if(quantidade <= 99){
-    document.getElementById("quantidadeS").innerText = quantidade
+        document.getElementById("quantidadeS").innerText = quantidade;
+        quantidadeS = quantidade
     }
+    calcularTotal();
 }
 
 function decrementS(){
     let quantidade = document.getElementById("quantidadeS").innerText;
-    quantidade = parseInt(quantidade);
     quantidade--;
     if(quantidade >= 0){
-    document.getElementById("quantidadeS").innerText = quantidade
+        document.getElementById("quantidadeS").innerText = quantidade;
+        quantidadeS = quantidade
     }
+    calcularTotal();
 }
 
 
@@ -102,3 +131,5 @@ function slideImages() {
 }
 
 document.addEventListener("DOMContentLoaded", slideImages);
+
+
