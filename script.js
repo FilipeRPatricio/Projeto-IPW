@@ -63,7 +63,7 @@ function decrementJ(){
 }
 
 
-//Bilhete de Adulto
+//Bilhete de Adulto.
 function incrementA(){
     let quantidade = document.getElementById("quantidadeA").innerText;
     quantidade++;
