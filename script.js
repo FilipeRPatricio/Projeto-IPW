@@ -133,3 +133,19 @@ function slideImages() {
 document.addEventListener("DOMContentLoaded", slideImages);
 
 
+/*Pagina Atividades*/
+
+function toggleLearnMore(id) {
+    const learnMoreContent = document.getElementById(id);
+    if (learnMoreContent.style.display === 'none' || learnMoreContent.style.display === '') {
+        learnMoreContent.style.display = 'block';
+    } else {
+        learnMoreContent.style.display = 'none';
+    }
+}
+
+function bookNow() {
+    alert("Função de reserva não implementada.");
+}
+
+
