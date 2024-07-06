@@ -145,7 +145,16 @@ function toggleLearnMore(id) {
 }
 
 function bookNow() {
-    alert("Função de reserva não implementada.");
+    alert("De momento não estamos a agendar este tipo de atividades");
 }
 
+/*Noticias*/
 
+function toggleDetails(id) {
+    var details = document.getElementById('details-' + id);
+    if (details.style.display === 'block') {
+        details.style.display = 'none';
+    } else {
+        details.style.display = 'block';
+    }
+}
