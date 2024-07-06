@@ -9,7 +9,7 @@ header {
 }
 
 .logo {
-    margin-right: 20px; /* Espaço entre o logotipo e os itens de navegação */
+    margin-right: 25px; /* Espaço entre o logotipo e os itens de navegação */
 }
 
 .logo img {
@@ -33,6 +33,10 @@ ul#Table {
     width: 100%;
 }
 
+
+
+
+
 /* Menu */
 ul#Table li {
     display: inline-block;
@@ -44,7 +48,7 @@ ul#Table li {
     height: 70px;
     width: 150px;
     background-color: #593335;
-    border-radius: 50%;
+    border-radius: 15px;
 }
 
 ul#Table a {
@@ -63,6 +67,37 @@ ul#Table a {
 ul#Table a:hover {
     color: #52B370;
 }
+
+
+
+/* Classe de estilos para tabelas */
+.tabela table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 16px;
+    border: 1px solid #EAE1D2;
+}
+
+.tabela th,
+.tabela td {
+    padding: 15px 20px;
+    text-align: left;
+    border-top: 1px solid #d0d0d0; /* Linha por cima do elemento */
+    
+}
+
+.tabela th {
+    font-weight: bold;
+}
+
+.tabela tfoot {
+    border-bottom: 1px solid #d0d0d0; /* Linha por baixo do foot */
+}
+
+
+
+
+
 
 /* Estilos do menu para telas menores */
 @media only screen and (max-width: 800px) {
