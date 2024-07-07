@@ -378,17 +378,16 @@ img {
 /*Apoiar*/
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     padding: 20px;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 400px);
 }
 
 .grid-item {
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    font-size: 30px;
-    text-align: center;
+    padding: 5px;
+
 }
 
 .containerApoiar {
