@@ -23,13 +23,17 @@
         </header>
 </head>
 <body>
-    <div class="tabela" style="position: relative; margin-top: 75px;">
+    <div>
+        <h1 id="center"> Planear Visita </h1>
+    </div>
+
+    <div class="tabela" style="position: relative; margin-top: 50px;">
         <table border="1">
             <thead>
                 <tr>
-                    <th>Tipo de Bilhete</th>
-                    <th>Preço</th>
-                    <th>Quantidade</th>
+                    <th id="small-title">Tipo de Bilhete</th>
+                    <th id="small-title">Preço</th>
+                    <th id="small-title">Quantidade</th>
                 </tr>
             </thead>
             <tbody>
@@ -72,8 +76,8 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th colspan="2">Total:</th>
-                    <th><span id="total">0,00 €</span></th>
+                    <th colspan="2" id="small-title">Total:</th>
+                    <th id="small-title"><span id="total">0,00 €</span></th>
                 </tr>
             </tfoot>
 
@@ -83,8 +87,8 @@
     </div>
     <div>
         <form action="#" method="post">
-            <fieldset style="margin-top: 75px;">
-                <legend>Dados de Cliente</legend>
+            <fieldset style="margin-top: 75px; border: 0px;">
+                <legend id="small-title">Dados de Cliente</legend>
                 <label for="nome">Nome: (*)</label>
                 <input id="nome" name="nome" type="text" required />
                 <br />

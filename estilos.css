@@ -3,7 +3,7 @@ header {
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: #F8EEDC;
+    background-color: #EAE1D2;
     position: relative;
     z-index: 1000; 
 }
@@ -33,7 +33,24 @@ ul#Table {
     width: 100%;
 }
 
+#center {
+    text-align: center;
+    font-family: "gitan-latin", sans-serif;
+    font-size:38px;
+    font-weight: 900;
+    color: #593335;
+}
 
+#small-title {
+    font-family: "gitan-latin", sans-serif;
+    font-size:28px;
+    font-weight: 900;
+    color: #593335;
+}
+
+#center-normal {
+    text-align: center;
+}
 
 
 
@@ -82,7 +99,7 @@ ul#Table a:hover {
 .tabela td {
     padding: 15px 20px;
     text-align: left;
-    border-top: 1px solid #d0d0d0; /* Linha por cima do elemento */
+    border-top: 1px solid #F3E8D4; /* Linha por cima do elemento */
     
 }
 
@@ -91,7 +108,7 @@ ul#Table a:hover {
 }
 
 .tabela tfoot {
-    border-bottom: 1px solid #d0d0d0; /* Linha por baixo do foot */
+    border-bottom: 1px solid #F3E8D4; /* Linha por baixo do foot */
 }
 
 
@@ -107,14 +124,18 @@ ul#Table a:hover {
     ul#Table li {
         display: block;
         padding: 10px;
-        background-color: #f4f4f4;
+        background-color: #F8EEDC;
     }
 }
 
 /* Background */
 body {
-    font-size: 18pt;
-    background-color: #EAE1D2;
+    margin: 0;
+    background-color: #F8EEDC;
+    background-image: url("Imagens/fundo2.svg");
+    font-family: "gitan-latin", sans-serif;
+    font-size: 23px;
+    font-weight: 600;
 }
 
 /* Tabela */
@@ -132,24 +153,27 @@ td {
 
 * { box-sizing: border-box; }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
 }
 
-.slideshow-container {
-        position: relative;
-        width: 100%;
-        height: 100vh; /* Full viewport height */
-        overflow: hidden;
 
-    }
+
 /*Mapa do zoo*/
+
+/* Botão */
 #map-popup {
     margin-left: auto; /* Empurrar o botão para a direita */
     padding: 10px 20px;
     background-color: #52B370;
-    color: white;
+    font-family: "gitan-latin", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    color: #FFEBC0;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -159,47 +183,50 @@ body {
     background-color: #41955e;
 }
 
-/* Estilo para o popup */
-.popup {
-    display: none; 
-    position: fixed; 
-    z-index: 1000; 
-    left: 0;
-    top: 0;
-    width: 100%;
+/* Estilo para o mapa */
+.popup-container {
     height: 100%;
-    overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.popup-content {
-    background-color: #fefefe;
-    margin: 15% auto; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; 
-    max-width: 700px; 
-    text-align: center;
+    z-index: 10;
 }
 
+#popup {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Botão de Fechar */
 .close {
-    color: #aaa;
-    float: right;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    transition: background-color 0.3s;
+
+    color: #593335;
     font-size: 28px;
     font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #52B370;
     text-decoration: none;
     cursor: pointer;
 }
 
-.popup-map {
-    width: 100%;
-    height: auto;
-}
 
 
 
@@ -250,7 +277,7 @@ img {
     display: flex;
     max-width: 900px;
     margin: 40px auto;
-    background-color: white;
+    background-color: #EAE1D2;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -334,7 +361,9 @@ img {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    margin: 20px 0;
+    margin: auto 0;
+    text-align: center;
+    justify-content: center;
 }
 
 .news-item {
@@ -345,6 +374,7 @@ img {
     transition: all 0.3s ease;
     max-width: 500px;
     margin: 10 auto;
+    background-color: #EAE1D2;
 }
 
 .news-item img {
@@ -391,7 +421,7 @@ img {
 }
 
 .containerApoiar {
-    display: flex
+    display: flex;
 }
 
 .imgApoiar {
@@ -402,4 +432,4 @@ img {
   
 .txtApoiar {
     font-size: 20px;
-  }
+}

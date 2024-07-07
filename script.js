@@ -1,16 +1,14 @@
-
-
-let quantidadeC = 0;
-let quantidadeJ = 0;
-let quantidadeA = 0;
-let quantidadeS = 0;
-
-const precoC = 14.99;
-const precoJ = 19.99;
-const precoA = 24.99;
-const precoS = 16.99;
+var quantidadeC = 0;
+var quantidadeJ = 0;
+var quantidadeA = 0;
+var quantidadeS = 0;
 
 function calcularTotal() {
+    const precoC = 14.99;
+    const precoJ = 19.99;
+    const precoA = 24.99;
+    const precoS = 16.99;
+
     const total = (quantidadeC * precoC) + (quantidadeJ * precoJ) + (quantidadeA * precoA) + (quantidadeS * precoS);
     document.getElementById('total').innerHTML = `${total.toFixed(2)} €`;
 }
@@ -156,5 +154,33 @@ function toggleDetails(id) {
         details.style.display = 'none';
     } else {
         details.style.display = 'block';
+    }
+}
+
+
+
+/* Função Abrir e Fechar Mapa */
+function openMap() {
+
+    // Guarda-se o mapa com a classe "popup-container"
+    var container = document.getElementsByClassName("popup-container")[1];
+
+    // Guarda-se o mapa com o id "popup"
+    var popup = document.getElementById("popup");
+
+    // Guarda-se o botão com o id "map-popup"
+    var button = document.getElementById("map-popup");
+
+    // Guarda-se o elemento X com a classe "close"
+    var X = document.getElementsByClassName("close")[0];
+
+    // Abre o mapa quando se clica no botão
+    button.onclick = function() {
+        container.style.display="flex";
+    }
+
+    // Fecha o mapa quando se clica no X
+    X.onclick = function() {
+        container.style.display="none";
     }
 }

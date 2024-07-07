@@ -19,7 +19,9 @@
                 <li><a href="bilhetes.html">Bilhetes</a></li>
                 <li><a href="apoiar.html">Apoiar</a></li>
             </ul>
-            <button id="map-popup">Novo Mapa</button>
+
+            <button id="map-popup" onclick="openMap()">Abrir Mapa</button>
+
         </nav>
     </header>
     <main>
@@ -47,9 +49,12 @@
         
         <script src="script.js"></script>
 
-        <h1>Notícias</h1>
-        <hr/>
-        <div class = "news-section">
+
+
+        <br/>
+        <h1 id="center">Notícias</h1>
+        
+        <div class = "news-section" style="margin-bottom:25px">
             <div class = "news-item">
                 <img src="Imagens/criancas.webp" alt="Noticia 1">
                 <p>Programas de férias de verão para crianças e jovens dos 3 aos 16 anos. Inscrições abertas.</p>
@@ -86,13 +91,13 @@
                 </div>
             </div>
         </div>
-    
 
-        <div id="map-popup" class="popup">
-            <div class="popup-content">
-                <span class="close" onclick="closePopup()">&times;</span>
-                <img src="Imagens/mapa-zoo.jpeg" alt="Mapa" class="popup-map">
-            </div>
+        <!-- Mapa -->
+        <div class ="popup-container">
+            <br/>
+            <span class="close">&times;</span>
+            <img src="Imagens/mapa-zoo.jpeg" alt="Mapa" id="popup">
+            <br/>
         </div>
 
     </main>
