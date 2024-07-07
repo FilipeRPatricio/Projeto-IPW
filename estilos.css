@@ -374,3 +374,33 @@ img {
 .expand-btn:hover {
     background-color: #e65c00;
 }
+
+/*Apoiar*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.grid-item {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+    text-align: center;
+}
+
+.containerApoiar {
+    display: flex
+}
+
+.imgApoiar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.txtApoiar {
+    font-size: 20px;
+  }
