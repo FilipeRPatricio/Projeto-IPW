@@ -174,6 +174,7 @@ function openMap() {
     if (button) {
         button.onclick = function() {
             container.style.display = "flex";
+            container.scrollIntoView({ behavior: 'smooth' }); /* Scroll para o mapa */
         }
     }
 
@@ -181,6 +182,7 @@ function openMap() {
     if (x) {
         x.onclick = function() {
             container.style.display = "none";
+            button.scrollIntoView(false); /* Scroll para o topo da página */
         }
     }
 }
