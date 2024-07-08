@@ -182,7 +182,7 @@ function openMap() {
     if (x) {
         x.onclick = function() {
             container.style.display = "none";
-            button.scrollIntoView(false); /* Scroll para o topo da página */
+            button.scrollIntoView({ behavior: 'smooth' }); /* Scroll para o topo da página */
         }
     }
 }
