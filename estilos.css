@@ -50,6 +50,16 @@ ul#Table {
 
 #center-normal {
     text-align: center;
+    font-family: "gitan-latin", sans-serif;
+    font-size:22px;
+}
+
+#center-bold {
+    text-align: center;
+    font-family: "gitan-latin", sans-serif;
+    font-size:22px;
+    font-weight: 900;
+    color: #593335;
 }
 
 
@@ -71,13 +81,9 @@ ul#Table li {
 ul#Table a {
     display: inline-block;
     padding: 12px 10px 10px 10px;
-    
     text-decoration: none;
-
     font-family: "gitan-latin", sans-serif;
     font-size: 23px;
-    font-weight: 900px;
-
     color: #FFEBC0;
 }
 
@@ -187,23 +193,23 @@ td {
 .popup-container {
     height: 100%;
     margin: 0;
-    display: flex;
+
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 20px;
+    padding: 50px;
     z-index: 10;
 }
 
 #popup {
-    display: flex;
+
     max-width: 100%;
     height: auto;
 }
 
 /* Botão de Fechar */
 .close {
-    display: block;
+
     position: absolute;
     top: 10px;
     right: 10px;
@@ -350,7 +356,7 @@ img {
     display: none;
     margin-top: 20px;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color: #F8EEDC;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -405,6 +411,8 @@ img {
     background-color: #e65c00;
 }
 
+
+
 /*Apoiar*/
 .grid-container {
     display: grid;
@@ -412,6 +420,9 @@ img {
     padding: 20px;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 400px);
+
+    background-color: #EAE1D2;
+    margin-bottom: 50px;
 }
 
 .grid-item {
@@ -432,4 +443,32 @@ img {
   
 .txtApoiar {
     font-size: 20px;
+    text-align: center;
+}
+
+
+
+/* Rodapé */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    font-family: "gitan-latin", sans-serif;
+    color: #FFEBC0;
+    background-color: #593335;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 24px;
+    
+}
+
+.footer-text {
+    font-size: 18px;
+}
+
+.footer-smaller-text {
+    font-size: 12px;
+    color: #F8EEDC;
 }

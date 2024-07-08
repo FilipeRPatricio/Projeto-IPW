@@ -15,7 +15,6 @@ function calcularTotal() {
 
 
 
-
 //Botões de + e -
 
 //Bilhete de criança
@@ -162,25 +161,31 @@ function toggleDetails(id) {
 /* Função Abrir e Fechar Mapa */
 function openMap() {
 
-    // Guarda-se o mapa com a classe "popup-container"
-    var container = document.getElementsByClassName("popup-container")[1];
-
-    // Guarda-se o mapa com o id "popup"
-    var popup = document.getElementById("popup");
+    // Guarda-se o container com a classe "popup-container"
+    var container = document.getElementsByClassName("popup-container")[0];
 
     // Guarda-se o botão com o id "map-popup"
     var button = document.getElementById("map-popup");
 
-    // Guarda-se o elemento X com a classe "close"
-    var X = document.getElementsByClassName("close")[0];
+    // Guarda-se o elemento x com a classe "close"
+    var x = document.getElementsByClassName("close")[0];
 
     // Abre o mapa quando se clica no botão
-    button.onclick = function() {
-        container.style.display="flex";
+    if (button) {
+        button.onclick = function() {
+            container.style.display = "flex";
+        }
     }
 
     // Fecha o mapa quando se clica no X
-    X.onclick = function() {
-        container.style.display="none";
+    if (x) {
+        x.onclick = function() {
+            container.style.display = "none";
+        }
     }
 }
+
+// Correr função openMap quando o documento for carregado
+document.addEventListener("DOMContentLoaded", function() {
+    openMap();
+});

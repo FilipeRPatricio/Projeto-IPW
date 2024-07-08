@@ -46,15 +46,13 @@
             <span class="dot"></span> 
             <span class="dot"></span> 
         </div>
-        
-        <script src="script.js"></script>
 
 
 
         <br/>
         <h1 id="center">Notícias</h1>
         
-        <div class = "news-section" style="margin-bottom:25px">
+        <div class = "news-section" style="margin-bottom:25px; color: #666;">
             <div class = "news-item">
                 <img src="Imagens/criancas.webp" alt="Noticia 1">
                 <p>Programas de férias de verão para crianças e jovens dos 3 aos 16 anos. Inscrições abertas.</p>
@@ -72,32 +70,53 @@
             </div>
             <div class="news-item">
                 <img src="Imagens/tigresbebe.jpg" alt="Notícia 2">
-                <p>Visite o Jardim Zoológico e descubra as mais recentes crias da morada mais selvagem de Lisboa.</p>
+                <p>Visite o World Wonder Zoo e descubra as mais recentes crias da morada mais selvagem de Lisboa.</p>
                 <button class="expand-btn" onclick="toggleDetails(2)">Saber mais</button>
                 <div class="details" id="details-2">
-                    <p>Venha ao Jardim Zoológico e maravilhe-se com as novas crias de tigre</p>
+                    <p>Venha ao World Wonder Zoo e maravilhe-se com as novas crias de tigre</p>
                     <p>Os mais recentes membros da nossa família selvagem! Estes adoráveis filhotes estão prontos para conquistar o coração de todos os visitantes com a sua energia e brincadeiras.</p>
-                    <p>É a oportunidade perfeita para ver de perto o crescimento destes magníficos animais, aprender sobre a sua espécie e o importante trabalho de conservação que realizamos. Traga a família e faça parte desta incrível jornada de descoberta e encanto. Não perca a chance de conhecer as novas estrelas do nosso zoológico!</p>
+                    <p>
+                         É a oportunidade perfeita para ver de perto o crescimento destes magníficos animais, aprender sobre a sua espécie e o importante trabalho de conservação que realizamos. 
+                        Traga a família e faça parte desta incrível jornada de descoberta e encanto. Não perca a chance de conhecer as novas estrelas do nosso zoológico!
+                    </p>
                 </div>
             </div>
             <div class="news-item">
                 <img src="Imagens/oryz.jpg" alt="Notícia 3">
-                <p>De "Extinto na Natureza" para "Em Perigo": Jardim Zoológico dá vida à Natureza!</p>
+                <p>De "Extinto na Natureza" para "Em Perigo": World Wonder Zoo dá vida à Natureza!</p>
+                <br/>
                 <button class="expand-btn" onclick="toggleDetails(3)">Saber mais</button>
                 <div class="details" id="details-3">
-                    <p>O Jardim Zoológico orgulha-se de anunciar uma vitória extraordinária na conservação da vida selvagem!</p>
+                    <p>O World Wonder Zoo orgulha-se de anunciar uma vitória extraordinária na conservação da vida selvagem!</p>
                     <p>A recuperação do Oryx, que passou de "Extinto na Natureza" para "Em Perigo"</p>
-                    <p>Este marco significativo é resultado de anos de dedicação e esforços incansáveis para preservar e proteger esta espécie magnífica. Venha conhecer de perto estes incríveis animais e aprender sobre os nossos programas de conservação que continuam a dar esperança e vida à natureza. Junte-se a nós nesta celebração da biodiversidade e no compromisso de um futuro melhor para todas as espécies ameaçadas.</p>
+                    <p>
+                         Este marco significativo é resultado de anos de dedicação e esforços incansáveis para preservar e proteger esta espécie magnífica. 
+                        Venha conhecer de perto estes incríveis animais e aprender sobre os nossos programas de conservação que continuam a dar esperança e vida à natureza. 
+                        Junte-se a nós nesta celebração da biodiversidade e no compromisso de um futuro melhor para todas as espécies ameaçadas. 
+                    </p>
                 </div>
             </div>
         </div>
 
         <!-- Mapa -->
-        <div class ="popup-container">
+        <div class="popup-container" style="display: none">
             <br/>
-            <span class="close">&times;</span>
-            <img src="Imagens/mapa-zoo.jpeg" alt="Mapa" id="popup">
+            <span class="close" style="display: block">&times;</span>
+            <img src="Imagens/mapa2.png" alt="Mapa" id="popup" style="display: flex">
             <br/>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="footer-container">
+            <div class="footer-title">
+                <h2> Sobre Nós </h2>
+                <p class="footer-title"> Website criado por: </p>
+                <p class="footer-text"> Filipe Patrício nº202300133 </p>
+                <p class="footer-text"> Tiago Campos nº202300064 </p>
+                <p class="footer-smaller-text"> IPS Escola Superior de Tecnologia </p>
+                <p class="footer-smaller-text"> UC: IPW &nbsp;&nbsp;&nbsp; Prof: Rui Rodrigues </p>
+                <br/>
+            </div>
         </div>
 
     </main>
